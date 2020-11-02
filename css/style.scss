@@ -1,0 +1,222 @@
+@mixin size($width, $height, $bc) {
+  width: $width;
+  height: $height;
+  background-color: $bc;
+  // margin: 0 auto;
+}
+
+@mixin left {
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #555555;
+  display: block;
+  padding-left: 50px;
+}
+
+@mixin right($fs, $color, $width) {
+  font-size: $fs;
+  color: $color;
+  width: $width;
+  line-height: 40px;
+  float: left;
+  padding-left: 15px;
+
+  &:nth-of-type(odd) {
+    background-color: #f8f8f7;
+  }
+}
+
+@mixin nav($color) {
+  margin-top: 40px;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      text-decoration: none;
+      margin-left: 20px;
+
+      a {
+        color: $color;
+      }
+    }
+  }
+}
+
+html {
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1;
+  color: #555555;
+  font-size: 14px;
+  font-family: "メイリオ", Meiryo;
+
+
+
+
+  /*======= wrapper ======== */
+
+  #wrapper {
+    @include size(960px, auto, green);
+    margin: 0 auto;
+
+
+
+
+  /*======= header ======== */
+
+    header {
+      @include size(960px, 99px, #ffffff);
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        margin-top: 30px;
+      }
+
+
+      nav {
+        @include nav(#555);
+      }
+    }
+
+
+
+
+  /*======= main-image ======== */
+
+    #main-image {
+      @include size(960px, 300px, skyblue);
+    }
+
+
+
+
+  /*======= main ======== */
+
+
+
+
+    .main {
+      @include size(960px, 300px, rgb(252, 253, 253));
+      padding-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-self: center;
+
+
+
+
+  /*======= left ======== */
+
+
+
+
+      #left {
+        @include size(280px, auto, #fff);
+        margin-right: 30px;
+
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            @include size(278px, 48px, #dbebf5);
+            list-style: none;
+            margin-bottom: 10px;
+            border: 1px solid #63abd4;
+
+            #tel {
+              @include left;
+              background: url(../img/icon_tel.png) no-repeat 14px center;
+            }
+            #blog {
+              @include left;
+              background: url(../img/icon_blog.png) no-repeat 14px center;
+            }
+            #voice {
+              @include left;
+              background: url(../img/icon_voice.png) no-repeat 14px center;
+            }
+          }
+        }
+      }
+
+
+
+
+  /*======= right ======== */
+
+      #right {
+        @include size(650px, auto, #fff);
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom:15px;
+        }
+
+
+        dt {
+          @include right(14px, #a8a8a8, 79px);
+        }
+
+        dd {
+          @include right(15px, #555, 541px);
+          margin: 0;
+        }
+      }
+    }
+  }
+
+
+
+
+  /*======= footer ======== */
+
+  footer {
+    // margin-top: 300px;
+    @include size(100%, 79px, #63abd4);
+    background-color: #63abd4;
+    #page-top {
+      a{
+        width: 90px;
+        height: 25px;
+        background-color: #63abd4;
+        text-align: center;
+        color: white;
+        display: block;
+        line-height: 30px;
+        position: absolute;
+        bottom: -30px;
+        right: 200px;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+
+    .container {
+      width:960px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      position: relative;
+    }
+    nav {
+      @include nav(#ffffff);
+      margin: 0;
+
+      ul {
+        margin-top: 40px;
+      }
+    }
+  }
+
+
+}

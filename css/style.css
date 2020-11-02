@@ -1,0 +1,235 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1;
+  color: #555555;
+  font-size: 14px;
+  font-family: "メイリオ", Meiryo;
+  /*======= wrapper ======== */
+  /*======= footer ======== */
+}
+
+body #wrapper {
+  width: 960px;
+  height: auto;
+  background-color: green;
+  margin: 0 auto;
+  /*======= header ======== */
+  /*======= main-image ======== */
+  /*======= main ======== */
+}
+
+body #wrapper header {
+  width: 960px;
+  height: 99px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #wrapper header h1 {
+  margin-top: 30px;
+}
+
+body #wrapper header nav {
+  margin-top: 40px;
+}
+
+body #wrapper header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body #wrapper header nav ul li {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+body #wrapper header nav ul li a {
+  color: #555;
+}
+
+body #wrapper #main-image {
+  width: 960px;
+  height: 300px;
+  background-color: skyblue;
+}
+
+body #wrapper .main {
+  width: 960px;
+  height: 300px;
+  background-color: #fcfdfd;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  /*======= left ======== */
+  /*======= right ======== */
+}
+
+body #wrapper .main #left {
+  width: 280px;
+  height: auto;
+  background-color: #fff;
+  margin-right: 30px;
+}
+
+body #wrapper .main #left ul {
+  margin: 0;
+  padding: 0;
+}
+
+body #wrapper .main #left ul li {
+  width: 278px;
+  height: 48px;
+  background-color: #dbebf5;
+  list-style: none;
+  margin-bottom: 10px;
+  border: 1px solid #63abd4;
+}
+
+body #wrapper .main #left ul li #tel {
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #555555;
+  display: block;
+  padding-left: 50px;
+  background: url(../img/icon_tel.png) no-repeat 14px center;
+}
+
+body #wrapper .main #left ul li #blog {
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #555555;
+  display: block;
+  padding-left: 50px;
+  background: url(../img/icon_blog.png) no-repeat 14px center;
+}
+
+body #wrapper .main #left ul li #voice {
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #555555;
+  display: block;
+  padding-left: 50px;
+  background: url(../img/icon_voice.png) no-repeat 14px center;
+}
+
+body #wrapper .main #right {
+  width: 650px;
+  height: auto;
+  background-color: #fff;
+}
+
+body #wrapper .main #right h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+body #wrapper .main #right dt {
+  font-size: 14px;
+  color: #a8a8a8;
+  width: 79px;
+  line-height: 40px;
+  float: left;
+  padding-left: 15px;
+}
+
+body #wrapper .main #right dt:nth-of-type(odd) {
+  background-color: #f8f8f7;
+}
+
+body #wrapper .main #right dd {
+  font-size: 15px;
+  color: #555;
+  width: 541px;
+  line-height: 40px;
+  float: left;
+  padding-left: 15px;
+  margin: 0;
+}
+
+body #wrapper .main #right dd:nth-of-type(odd) {
+  background-color: #f8f8f7;
+}
+
+body footer {
+  width: 100%;
+  height: 79px;
+  background-color: #63abd4;
+  background-color: #63abd4;
+}
+
+body footer #page-top a {
+  width: 90px;
+  height: 25px;
+  background-color: #63abd4;
+  text-align: center;
+  color: white;
+  display: block;
+  line-height: 30px;
+  position: absolute;
+  bottom: -30px;
+  right: 200px;
+  border-radius: 4px 4px 0 0;
+}
+
+body footer .container {
+  width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+body footer nav {
+  margin-top: 40px;
+  margin: 0;
+}
+
+body footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body footer nav ul li {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+body footer nav ul li a {
+  color: #ffffff;
+}
+
+body footer nav ul {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */
